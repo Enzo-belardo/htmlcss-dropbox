@@ -124,23 +124,26 @@ ul>li{
 }
 
 .box{
-    border: solid .5px black;
+    border: solid 1px black;
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 100vh;
     flex-direction: row;
 }
 .list{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 20%;
-    line-height: 2rem;
+    height: 800px;
+    line-height: 1rem;
     padding: 0 2rem;
 }
 .special{
-    text-align: center;
-    border-bottom: solid 1px black;
-    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
 }
 .list>button{
     border: solid 1px black;
@@ -310,4 +313,39 @@ ul>li{
     color: black;
     border: none;
     padding: 0.5rem 1rem;
+ }
+ .faq{
+    width: 60%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+ }
+ .faq>p{
+    border-bottom: solid 1px black;
+    line-height: 3rem;
+ }
+ .faq>h1{
+    margin-bottom: 2rem;
+ }
+ .container-footer{
+    display: flex;
+    background-color: black;
+    height: 500px;
+    justify-content: center;
+    margin-top: 5rem;
+ }
+ .box-footer{
+    width: 200px;
+    height: 250px;
+    color: white;
+    margin: 2rem 1rem;
+    line-height: 1.4rem;
+ }
+ .box-footer>ul{
+    display: flex;
+    flex-direction: column;
+ }
+ .box-footer>ul>li>h3{
+    margin-bottom: 1rem;
  }
