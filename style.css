@@ -72,7 +72,6 @@ ul>li{
 .article{
     min-height: 500px;
     width: 75%;
-    border: solid 1px black;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -128,11 +127,13 @@ ul>li{
     border: solid .5px black;
     display: flex;
     flex-direction: column;
-    width: 20vw;
-    height: 120vh ;
+    width: 30%;
+    height: 100vh;
     flex-direction: row;
 }
 .list{
+    width: 100%;
+    height: 20%;
     line-height: 2rem;
     padding: 0 2rem;
 }
@@ -177,6 +178,7 @@ ul>li{
 .second-article{
     height: 600px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -184,14 +186,24 @@ ul>li{
 
 .text{
     width: 35%;
+    height: 100%;
     height:400px ;
+    padding: 2rem;
+}
+
+.text>h1{
+    margin-bottom: 2rem;
+}
+.text>button{
     border: solid 1px black;
+    background-color: white;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 .image{
     width: 35%;
     height:400px ;
-    border: solid 1px black;
 }
 .image>img{
     width: 100%;
@@ -205,20 +217,24 @@ ul>li{
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap ;
+    margin-bottom: 3rem;
 }
 
 .card{
     display: flex;
     width: 250px;
-    height: 300px;
-    border: solid 1px black;
     margin: 1rem 0;
-
+    flex-wrap: wrap;
+}
+.card img{
+    width: 100%;
+}
+.card h2{
+    margin-bottom: 2rem;
 }
 
 .titolone{
     width: 100%;
-    border: solid 1px black;
 }
 
 .container-brand{
@@ -228,32 +244,59 @@ ul>li{
     margin-top: 50px;
  }
 
- .inesistent{
+ .title-team{
     width: 70%;
-    margin: 0 auto;
-    border: solid 1px black;
+    margin:0 auto;
  }
+
+ .title-team>h1{
+    margin-bottom: 2rem;
+ }
+
+
  .container-box{
     display: flex;
     margin-top: 50px;
-    flex-wrap: wrap;
  }
 
  .square{
     display: flex;
     width: calc(100%/3);
-    flex-wrap: wrap;  
-    justify-content: center; 
+    height: calc(100%/3); 
+    flex-wrap: wrap;
  }
 
  .brand{
     width: 50%;
     height: 30vh;
-    border: solid 1px black;  
+    border: solid 1px black;
+    position: relative;  
  }
- .last-square{
+ .brand>img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+    transform: translate(-50,-50);
+
+ }
+ .orizontal-square{
     display: flex;
     width: 100%;
     height: 200px;
-    border: solid 1px black;
+    background-color: rgb(139, 169, 204);
+ }
+ .square-invite{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+ }
+ .square-invite> button{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+
  }
