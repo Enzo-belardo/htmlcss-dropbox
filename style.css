@@ -265,6 +265,19 @@ ul>li{
     height: calc(100%/3); 
     flex-wrap: wrap;
  }
+ .square-centered{
+    padding: 2rem 2rem;
+    vertical-align:text-bottom
+ }
+ 
+ .square-centered>img{
+    width: 50%;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px black;
+ }
+ .square.centered,p{
+    margin-bottom: 2rem;
+ }
 
  .brand{
     width: 50%;
@@ -279,7 +292,6 @@ ul>li{
     bottom: 25%;
     right: 25%;
     transform: translate(-50,-50);
-
  }
  .orizontal-square{
     display: flex;
@@ -298,5 +310,4 @@ ul>li{
     color: black;
     border: none;
     padding: 0.5rem 1rem;
-
  }
